@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trivial Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Simple Web App</h1>
+<button id="messageButton" onclick="showMessage()">Click Me</button>
+<div id="message"></div>
+
+<script>
+    function showMessage() {
+        const message = document.getElementById("message");
+        message.textContent = "You clicked the button";
+    }
+</script>
+
+</body>
+</html>
