@@ -1,34 +1,35 @@
 version: 2.1
 
+executors:
+  pw-noble-development:
+    docker:
+      - image: mcr.microsoft.com/playwright:v1.56.0-noble
+
 jobs:
   test:
-    executor: node
+    executor: pw-noble-development
     steps:
       - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
 
       - run:
           name: Install dependencies
           command: npm ci
 
       - run:
-          name: Start server
-          command: npx serve &
-
-      - run:
           name: Run Playwright tests
           command: npm test
 
       - store_artifacts:
-          path: test-results
-          destination: playwright-results
-      - store_artifacts:
           path: playwright-report
           destination: playwright-report
+
       - store_test_results:
           path: test-results
 
 workflows:
-  version: 2
   test:
     jobs:
       - test
