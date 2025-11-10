@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:apps="http://schemas.google.com/apps/2006">
+  <title>Mail Filters</title>
+  <id>tag:mail.google.com,2008:filters:generated-2025-11-10</id>
+  <updated>2025-11-10T00:00:00Z</updated>
+  <author>
+    <name>gmail-filter-generator</name>
+  </author>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:1</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="from" value="billing@circleci.com"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Billing"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:2</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="from" value="GitHub"/>
+    <apps:property name="subject" value="a new public key was added to your account"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Noise"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:3</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(circle.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/circleci/circle"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:4</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(nomad-metrics.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/nomad-metrics"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:5</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(infrastructure-picard.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/picard"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:6</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="from" value="alerts@compose.io"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Alerts"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:7</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(circleci.com.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/circleci.com"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:8</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(picard-services.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/picard-services"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:9</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="subject" value="PPP"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Noise"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:10</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(engineering.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/engineering"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:11</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(infrastructure.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/infra"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:12</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(circleci-docs.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/docs"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:13</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(build-agent.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/builder-agent"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:14</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(circle-admin-cli.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/circleci-admin-cli"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:15</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(ops-docs.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/docs"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:16</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="to" value="enterprise@circleci.com"/>
+    <apps:property name="subject" value="New lead assigned to you"/>
+    <apps:property name="hasTheWord" value="list:(&lt;role-employees-do-not-contact.circleci.com&gt;)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Sales"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:17</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(pipeline.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/data-pipeline"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:18</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="from" value="no-reply@slack.com"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Slack"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:19</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="subject" value="CCIE p0 Report"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Enterprise"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:20</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(inference-test-data.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/iOS"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:21</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(&lt;announcements.discuss.circleci.com&gt;)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Announce"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:22</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(picard-components.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/picard-services"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:23</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(frontend.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/frontend"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:24</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(frontend-private.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/frontend"/>
+  </entry>
+  <entry>
+    <category term="filter"/>
+    <title>Mail Filter</title>
+    <id>tag:mail.google.com,2008:filter:25</id>
+    <updated>2025-11-10T00:00:00Z</updated>
+    <content></content>
+    <apps:property name="hasTheWord" value="list:(image-maker.circleci.github.com)"/>
+    <apps:property name="shouldArchive" value="true"/>
+    <apps:property name="label" value="Code/image-maker"/>
+  </entry>
+</feed>
