@@ -1,15 +1,17 @@
 version: 2.1
 
 executors:
-  pw-noble-development:
+  node-executor:
     docker:
-      - image: mcr.microsoft.com/playwright:v1.56.0-noble
+      - image: cimg/node:20.19
 
 jobs:
-  test:
-    executor: pw-noble-development
+  playwright:
+    executor: node-executor
+    parallelism: 4  # Start with 4, they use 16
     steps:
       - checkout
+      
       - restore_cache:
           keys:
             - v1-dependencies
@@ -18,18 +20,41 @@ jobs:
           name: Install dependencies
           command: npm ci
 
-      - run:
-          name: Run Playwright tests
-          command: npm test
+      - save_cache:
+          key: v1-dependencies
+          paths:
+            - node_modules
 
-      - store_artifacts:
-          path: playwright-report
-          destination: playwright-report
+      - restore_cache:
+          key: v1-playwright-browsers
+
+      - run:
+          name: Install Playwright browsers
+          command: npx playwright install --with-deps
+
+      - save_cache:
+          key: v1-playwright-browsers
+          paths:
+            - ~/.cache/ms-playwright
+
+      - run:
+          name: Run Playwright tests with splitting
+          command: |
+            TESTFILES=$(circleci tests glob "tests/**/*.spec.ts")
+            export PLAYWRIGHT_JUNIT_OUTPUT_NAME=results.xml
+            echo "$TESTFILES" | circleci tests run \
+              --command="xargs npx playwright test --reporter=junit" \
+              --verbose \
+              --split-by=timings
 
       - store_test_results:
+          path: results.xml
+          
+      - store_artifacts:
           path: test-results
+          destination: test-results
 
 workflows:
   test:
     jobs:
-      - test
+      - playwright
