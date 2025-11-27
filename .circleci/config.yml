@@ -40,7 +40,7 @@ jobs:
       - run:
           name: Run Playwright tests with splitting
           command: |
-            TESTFILES=$(circleci tests glob "tests/**/*.spec.ts")
+            TESTFILES=$(circleci tests glob "tests/**/*.spec.js")
             export PLAYWRIGHT_JUNIT_OUTPUT_NAME=results.xml
             echo "$TESTFILES" | circleci tests run \
               --command="xargs npx playwright test --reporter=junit" \
